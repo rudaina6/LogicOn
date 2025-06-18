@@ -1,0 +1,47 @@
+# ===== Qt & C++ Build Files =====
+*.o
+*.obj
+*.so
+*.a
+*.lib
+*.dll
+*.exe
+
+# ===== Qt MOC, RCC, UIC generated files =====
+moc_*.cpp
+qrc_*.cpp
+ui_*.h
+
+# ===== Qt Creator User Settings =====
+*.autosave
+*.pro.user
+*.pro.user.*
+*.qbs.user
+*.qbs.user.*
+*.qmlproject.user
+*.qmlproject.user.*
+
+# ===== Build Folders =====
+build-*/
+debug/
+release/
+bin/
+tmp/
+out/
+
+# ===== Makefile artifacts =====
+Makefile*
+*.d
+*.dep
+*.cmd
+*.map
+
+# ===== Logs & temp files =====
+*.log
+*.cache
+*.tmp
+
+# ===== macOS/Windows/Linux OS Files =====
+.DS_Store
+Thumbs.db
+desktop.ini

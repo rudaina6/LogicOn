@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>logo.png</file>
+        <file>and.png</file>
+        <file>andtt.png</file>
+        <file>or.png</file>
+        <file>ortt.png</file>
+        <file>not.png</file>
+        <file>nottt.png</file>
+        <file>xor.png</file>
+        <file>xortt.png</file>
+        <file>nand.png</file>
+        <file>nandtt.png</file>
+        <file>nortt.png</file>
+        <file>back.png</file>
+        <file>level1.jpg</file>
+        <file>level2.png</file>
+        <file>level3.png</file>
+        <file>level4.jpg</file>
+        <file>level5.jpg</file>
+        <file>level6.jpg</file>
+        <file>nor.png</file>
+    </qresource>
+</RCC>

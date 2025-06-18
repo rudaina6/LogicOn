@@ -1,0 +1,4733 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1030</width>
+    <height>510</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(12, 50, 119)</string>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="coverPage">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(12, 50, 119);</string>
+       </property>
+       <widget class="QPushButton" name="tutorialButton">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>370</y>
+          <width>211</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+    background-color: rgb(77, 135, 234); /* Darker Blue for Back Button */
+    font-size: 16px;
+    font-weight: bold 12 pt;
+    color: #FFFFFF; /* White Text */
+    border: 1px solid #004080; /* Subtle border */
+    border-radius: 8px;
+    padding: 8px 16px;
+}
+
+QPushButton:hover {
+    background-color: #4DC3FF; /* Light Blue Hover for Back Button */
+    color: #002966; /* Dark Blue Text */
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>LEARN THE BASICS</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="levelsButton">
+        <property name="geometry">
+         <rect>
+          <x>600</x>
+          <y>370</y>
+          <width>211</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+    background-color: rgb(77, 135, 234); /* Darker Blue for Back Button */
+    font-size: 16px;
+    font-weight: bold 12 pt;
+    color: #FFFFFF; /* White Text */
+    border: 1px solid #004080; /* Subtle border */
+    border-radius: 8px;
+    padding: 8px 16px;
+}
+
+QPushButton:hover {
+    background-color: #4DC3FF; /* Light Blue Hover for Back Button */
+    color: #002966; /* Dark Blue Text */
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>LEVELS</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="logo">
+        <property name="geometry">
+         <rect>
+          <x>-20</x>
+          <y>10</y>
+          <width>1031</width>
+          <height>321</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="Resources.qrc">:/images/logo.png</pixmap>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tutorialPage">
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(191, 219, 241);</string>
+       </property>
+       <widget class="QTabWidget" name="tabWidget">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>1030</width>
+          <height>510</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QTabWidget::pane {
+        border: none;
+    }
+
+    QTabBar::tab {
+        color: black;  /* Tab text color */
+        font-weight: bold;
+        font-size: 14px;
+        padding: 10px 20px;
+        border-radius: 10px;
+        width: 100px;  /* Make tabs wider */
+		height: 15px;
+    }
+
+    QTabBar::tab:selected {
+        background-color: rgb(9, 40, 93);
+		color: white;
+    }</string>
+        </property>
+        <property name="currentIndex">
+         <number>4</number>
+        </property>
+        <widget class="QWidget" name="Intro">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(12, 50, 119)</string>
+         </property>
+         <attribute name="title">
+          <string>Intro</string>
+         </attribute>
+         <widget class="QLabel" name="label_4">
+          <property name="geometry">
+           <rect>
+            <x>50</x>
+            <y>40</y>
+            <width>381</width>
+            <height>61</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel {
+    font-size: 36px;
+    font-weight: bold;
+    color: #4DC3FF; /* Light Blue Text */
+    text-align: center;
+}</string>
+          </property>
+          <property name="text">
+           <string>Welcome to LogicOn!</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_5">
+          <property name="geometry">
+           <rect>
+            <x>50</x>
+            <y>120</y>
+            <width>901</width>
+            <height>261</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel {
+    font-size: 18px;
+    font-weight: normal;
+    color: #FFFFFF; /* White text */
+    background-color: #004080; /* Blue background for text box */
+    border: 2px solid #4DC3FF; /* Light blue border */
+    padding: 8px; /* Padding for better readability */
+    border-radius: 5px; /* Rounded corners */
+}</string>
+          </property>
+          <property name="text">
+           <string>In this section, you'll learn the basics of logic gates and how they work together to process inputs and produce outputs.
+
+Logic gates like AND, OR, XOR, and NOT are the building blocks of digital circuits. By toggling inputs and experimenting with gates, you'll see how each gate operates and affects the circuit.
+
+Follow the instructions carefully, and don't forget to light up the bulb by achieving the correct output. This will prepare you for the challenges ahead in the Levels section. Let's get started!</string>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tutorialAND">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(12, 50, 119)</string>
+         </property>
+         <attribute name="title">
+          <string>AND</string>
+         </attribute>
+         <widget class="QLabel" name="andgate">
+          <property name="geometry">
+           <rect>
+            <x>180</x>
+            <y>-20</y>
+            <width>441</width>
+            <height>481</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="Resources.qrc">:/images/and.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="andtt">
+          <property name="geometry">
+           <rect>
+            <x>690</x>
+            <y>70</y>
+            <width>290</width>
+            <height>300</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="Resources.qrc">:/images/andtt.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_6">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>30</y>
+            <width>431</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel {
+    font-size: 18px;
+    font-weight: normal;
+    color: #FFFFFF; /* White text */
+    background-color: #004080; /* Blue background for text box */
+    border: 2px solid #4DC3FF; /* Light blue border */
+    padding: 8px; /* Padding for better readability */
+    border-radius: 5px; /* Rounded corners */
+}</string>
+          </property>
+          <property name="text">
+           <string>The AND Gate: Outputs 1 only if both inputs are 1.</string>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tutorialOR">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(12, 50, 119)</string>
+         </property>
+         <attribute name="title">
+          <string>OR</string>
+         </attribute>
+         <widget class="QLabel" name="orgate">
+          <property name="geometry">
+           <rect>
+            <x>240</x>
+            <y>60</y>
+            <width>321</width>
+            <height>321</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="Resources.qrc">:/images/or.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="ortt">
+          <property name="geometry">
+           <rect>
+            <x>690</x>
+            <y>70</y>
+            <width>290</width>
+            <height>300</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="Resources.qrc">:/images/ortt.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_7">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>30</y>
+            <width>431</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel {
+    font-size: 18px;
+    font-weight: normal;
+    color: #FFFFFF; /* White text */
+    background-color: #004080; /* Blue background for text box */
+    border: 2px solid #4DC3FF; /* Light blue border */
+    padding: 8px; /* Padding for better readability */
+    border-radius: 5px; /* Rounded corners */
+}</string>
+          </property>
+          <property name="text">
+           <string>The OR Gate: Outputs 1 if at least one input is 1.</string>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tutorialNOT">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(12, 50, 119)</string>
+         </property>
+         <attribute name="title">
+          <string>NOT</string>
+         </attribute>
+         <widget class="QLabel" name="notgate">
+          <property name="geometry">
+           <rect>
+            <x>180</x>
+            <y>10</y>
+            <width>411</width>
+            <height>401</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="Resources.qrc">:/images/not.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="nottt">
+          <property name="geometry">
+           <rect>
+            <x>690</x>
+            <y>110</y>
+            <width>281</width>
+            <height>211</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="Resources.qrc">:/images/nottt.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="notGateInputButton">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>200</y>
+            <width>83</width>
+            <height>29</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+background-color: rgb(9, 40, 93);
+color: white;
+font: bold 12pt
+}
+
+</string>
+          </property>
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="notGateOutputLabel">
+          <property name="geometry">
+           <rect>
+            <x>580</x>
+            <y>180</y>
+            <width>51</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_8">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>30</y>
+            <width>551</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel {
+    font-size: 18px;
+    font-weight: normal;
+    color: #FFFFFF; /* White text */
+    background-color: #004080; /* Blue background for text box */
+    border: 2px solid #4DC3FF; /* Light blue border */
+    padding: 8px; /* Padding for better readability */
+    border-radius: 5px; /* Rounded corners */
+}</string>
+          </property>
+          <property name="text">
+           <string>The NOT Gate: Inverts the input: 1 becomes 0, and 0 becomes 1.</string>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tutorialNAND">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(12, 50, 119)</string>
+         </property>
+         <attribute name="title">
+          <string>NAND</string>
+         </attribute>
+         <widget class="QLabel" name="nandgate">
+          <property name="geometry">
+           <rect>
+            <x>190</x>
+            <y>-30</y>
+            <width>421</width>
+            <height>491</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="Resources.qrc">:/images/nand.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="nandtt">
+          <property name="geometry">
+           <rect>
+            <x>690</x>
+            <y>70</y>
+            <width>290</width>
+            <height>300</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="Resources.qrc">:/images/nandtt.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_9">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>30</y>
+            <width>461</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel {
+    font-size: 18px;
+    font-weight: normal;
+    color: #FFFFFF; /* White text */
+    background-color: #004080; /* Blue background for text box */
+    border: 2px solid #4DC3FF; /* Light blue border */
+    padding: 8px; /* Padding for better readability */
+    border-radius: 5px; /* Rounded corners */
+}</string>
+          </property>
+          <property name="text">
+           <string>The NAND Gate: Outputs 1 unless both inputs are 1.</string>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tutorialNOR">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(12, 50, 119)
+</string>
+         </property>
+         <attribute name="title">
+          <string>NOR</string>
+         </attribute>
+         <widget class="QLabel" name="norgate">
+          <property name="geometry">
+           <rect>
+            <x>240</x>
+            <y>10</y>
+            <width>321</width>
+            <height>411</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="Resources.qrc">:/images/nor.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="nortt">
+          <property name="geometry">
+           <rect>
+            <x>690</x>
+            <y>70</y>
+            <width>290</width>
+            <height>300</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="Resources.qrc">:/images/nortt.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_10">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>30</y>
+            <width>431</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel {
+    font-size: 18px;
+    font-weight: normal;
+    color: #FFFFFF; /* White text */
+    background-color: #004080; /* Blue background for text box */
+    border: 2px solid #4DC3FF; /* Light blue border */
+    padding: 8px; /* Padding for better readability */
+    border-radius: 5px; /* Rounded corners */
+}</string>
+          </property>
+          <property name="text">
+           <string>The NOR Gate: Outputs 1 only if both inputs are 0.</string>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tutorialXOR">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(12, 50, 119)</string>
+         </property>
+         <attribute name="title">
+          <string>XOR</string>
+         </attribute>
+         <widget class="QLabel" name="xorgate">
+          <property name="geometry">
+           <rect>
+            <x>200</x>
+            <y>-20</y>
+            <width>421</width>
+            <height>481</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="Resources.qrc">:/images/xor.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="xortt">
+          <property name="geometry">
+           <rect>
+            <x>690</x>
+            <y>70</y>
+            <width>290</width>
+            <height>300</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="Resources.qrc">:/images/xortt.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_11">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>30</y>
+            <width>431</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel {
+    font-size: 18px;
+    font-weight: normal;
+    color: #FFFFFF; /* White text */
+    background-color: #004080; /* Blue background for text box */
+    border: 2px solid #4DC3FF; /* Light blue border */
+    padding: 8px; /* Padding for better readability */
+    border-radius: 5px; /* Rounded corners */
+}</string>
+          </property>
+          <property name="text">
+           <string>The XOR Gate: Outputs 1 if inputs are different.</string>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+       <widget class="QPushButton" name="input1Button">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>190</y>
+          <width>83</width>
+          <height>29</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color: rgb(9, 40, 93);
+color: white;
+font: bold 12pt
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="input2Button">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>290</y>
+          <width>83</width>
+          <height>29</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color: rgb(9, 40, 93);
+color: white;
+font: bold 12pt
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="outputCircle">
+        <property name="geometry">
+         <rect>
+          <x>610</x>
+          <y>230</y>
+          <width>51</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="tutorialBackButton">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>440</y>
+          <width>83</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+    background-color: rgb(77, 135, 234); /* Darker Blue for Back Button */
+    font-size: 16px;
+    font-weight: bold 12 pt;
+    color: #FFFFFF; /* White Text */
+    border: 1px solid #004080; /* Subtle border */
+    border-radius: 8px;
+    padding: 8px 16px;
+}
+
+QPushButton:hover {
+    background-color: #4DC3FF; /* Light Blue Hover for Back Button */
+    color: #002966; /* Dark Blue Text */
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>Back</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="levelsPage">
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>300</y>
+          <width>241</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+    font-size: 36px;
+    font-weight: bold;
+    color: #4DC3FF; /* Light Blue Text */
+    text-align: center;
+}</string>
+        </property>
+        <property name="text">
+         <string>Select a Level</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="levelButton1">
+        <property name="geometry">
+         <rect>
+          <x>160</x>
+          <y>370</y>
+          <width>83</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #004080; /* Base background color */
+    color: #FFFFFF; /* Text color */
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid white; /* Border color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px 20px;
+}
+
+QPushButton:hover {
+    background-color: #4DC3FF; /* Darker Blue on Hover */
+}
+
+
+
+</string>
+        </property>
+        <property name="text">
+         <string>1</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="levelButton2">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>370</y>
+          <width>83</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #004080; /* Base background color */
+    color: #FFFFFF; /* Text color */
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid white; /* Border color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px 20px;
+}
+
+QPushButton:hover {
+    background-color: #4DC3FF; /* Darker Blue on Hover */
+}
+
+
+
+</string>
+        </property>
+        <property name="text">
+         <string>2</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="levelButton3">
+        <property name="geometry">
+         <rect>
+          <x>400</x>
+          <y>370</y>
+          <width>83</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #004080; /* Base background color */
+    color: #FFFFFF; /* Text color */
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid white; /* Border color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px 20px;
+}
+
+QPushButton:hover {
+    background-color: #4DC3FF; /* Darker Blue on Hover */
+}
+
+
+
+</string>
+        </property>
+        <property name="text">
+         <string>3</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="levelButton4">
+        <property name="geometry">
+         <rect>
+          <x>520</x>
+          <y>370</y>
+          <width>83</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #004080; /* Base background color */
+    color: #FFFFFF; /* Text color */
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid white; /* Border color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px 20px;
+}
+
+QPushButton:hover {
+    background-color: #4DC3FF; /* Darker Blue on Hover */
+}
+
+
+
+</string>
+        </property>
+        <property name="text">
+         <string>4</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="levelButton5">
+        <property name="geometry">
+         <rect>
+          <x>640</x>
+          <y>370</y>
+          <width>83</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #004080; /* Base background color */
+    color: #FFFFFF; /* Text color */
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid white; /* Border color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px 20px;
+}
+
+QPushButton:hover {
+    background-color: #4DC3FF; /* Darker Blue on Hover */
+}
+
+
+
+</string>
+        </property>
+        <property name="text">
+         <string>5</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="levelButton6">
+        <property name="geometry">
+         <rect>
+          <x>760</x>
+          <y>370</y>
+          <width>83</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #004080; /* Base background color */
+    color: #FFFFFF; /* Text color */
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid white; /* Border color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px 20px;
+}
+
+QPushButton:hover {
+    background-color: #4DC3FF; /* Darker Blue on Hover */
+}
+
+
+
+</string>
+        </property>
+        <property name="text">
+         <string>6</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="levelsBackButton">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>430</y>
+          <width>83</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+    background-color: rgb(77, 135, 234); /* Darker Blue for Back Button */
+    font-size: 16px;
+    font-weight: bold 12 pt;
+    color: #FFFFFF; /* White Text */
+    border: 1px solid #004080; /* Subtle border */
+    border-radius: 8px;
+    padding: 8px 16px;
+}
+
+QPushButton:hover {
+    background-color: #4DC3FF; /* Light Blue Hover for Back Button */
+    color: #002966; /* Dark Blue Text */
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>Back</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_2">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>30</y>
+          <width>681</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+    font-size: 36px;
+    font-weight: bold;
+    color: #4DC3FF; /* Light Blue Text */
+    text-align: center;
+}</string>
+        </property>
+        <property name="text">
+         <string>Time to put your knowledge to the test!</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_3">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>100</y>
+          <width>971</width>
+          <height>181</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+    font-size: 18px;
+    font-weight: normal;
+    color: #FFFFFF; /* White text */
+    background-color: #004080; /* Blue background for text box */
+    border: 2px solid #4DC3FF; /* Light blue border */
+    padding: 8px; /* Padding for better readability */
+    border-radius: 5px; /* Rounded corners */
+}</string>
+        </property>
+        <property name="text">
+         <string>Welcome to the Logic Gate Challenges!
+This is where your logic skills are put to the test. Each level presents a unique circuit with inputs, gates, and a target output. Your task is to toggle inputs and configure gates to match the target output.
+The levels become progressively harder, introducing more complex gate combinations and logic. Pay close attention to the target output and use what you’ve learned in the tutorial.
+Precision and experimentation are key. Complete all levels to become a Logic Gates Master. Good luck!</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="level1Page">
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <widget class="QPushButton" name="level1BackButton">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>430</y>
+          <width>83</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+    background-color: rgb(77, 135, 234); /* Darker Blue for Back Button */
+    font-size: 16px;
+    font-weight: bold 12 pt;
+    color: #FFFFFF; /* White Text */
+    border: 1px solid #004080; /* Subtle border */
+    border-radius: 8px;
+    padding: 8px 16px;
+}
+
+QPushButton:hover {
+    background-color: #4DC3FF; /* Light Blue Hover for Back Button */
+    color: #002966; /* Dark Blue Text */
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>Back</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="inputA1">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>120</y>
+          <width>61</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color: rgb(9, 40, 93);
+color: white;
+font: bold 12pt
+}
+
+
+</string>
+        </property>
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="inputB1">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>180</y>
+          <width>61</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color: rgb(9, 40, 93);
+color: white;
+font: bold 12pt
+}
+
+
+</string>
+        </property>
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="inputC1">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>290</y>
+          <width>61</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color: rgb(9, 40, 93);
+color: white;
+font: bold 12pt
+}
+
+
+</string>
+        </property>
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="CurrentOutput1">
+        <property name="geometry">
+         <rect>
+          <x>780</x>
+          <y>180</y>
+          <width>63</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">/* QLabel for Current Output and Target Output */
+QLabel {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF; /* White text */
+    background-color: #1A5276; /* Dark blue background */
+    border: 2px solid #4DC3FF; /* Light blue border */
+    padding: 8px; /* Padding for readability */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Centered text */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="submitLevel1Button">
+        <property name="geometry">
+         <rect>
+          <x>820</x>
+          <y>420</y>
+          <width>171</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: rgb(62, 206, 158);/* Medium blue background */
+    color: #FFFFFF; /* White text */
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid rgb(7, 30, 70);/* Darker blue border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px 20px;
+}
+
+QPushButton:hover {
+    color: #002966; /* Dark blue text */
+}
+
+
+QPushButton:pressed {
+    background-color: rgb(7, 30, 70); /* Dark blue background */
+    border: 2px solid #4DC3FF; /* Light blue border */
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Submit Answer</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="level1FeedbackLabel">
+        <property name="geometry">
+         <rect>
+          <x>350</x>
+          <y>420</y>
+          <width>251</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="CurrentDisplay1">
+        <property name="geometry">
+         <rect>
+          <x>780</x>
+          <y>110</y>
+          <width>171</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">/* QLabel for Current Output and Target Output */
+QLabel {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF; /* White text */
+    background-color: #1A5276; /* Dark blue background */
+    border: 2px solid #4DC3FF; /* Light blue border */
+    padding: 8px; /* Padding for readability */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Centered text */
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Current Output:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="TargetDisplay1">
+        <property name="geometry">
+         <rect>
+          <x>780</x>
+          <y>240</y>
+          <width>171</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">/* QLabel for Current Output and Target Output */
+QLabel {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF; /* White text */
+    background-color: #1A5276; /* Dark blue background */
+    border: 2px solid #4DC3FF; /* Light blue border */
+    padding: 8px; /* Padding for readability */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Centered text */
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Target Output:</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="Gate1">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>70</y>
+          <width>101</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox {
+background-color: rgb(9, 40, 93);
+color: white;
+font: bold 9pt;
+padding: 5px 10px;
+}
+</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>AND</string>
+         </property>
+         <property name="icon">
+          <iconset resource="Resources.qrc">
+           <normaloff>:/images/and.png</normaloff>:/images/and.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>OR</string>
+         </property>
+         <property name="icon">
+          <iconset resource="Resources.qrc">
+           <normaloff>:/images/or.png</normaloff>:/images/or.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>XOR</string>
+         </property>
+         <property name="icon">
+          <iconset resource="Resources.qrc">
+           <normaloff>:/images/xor.png</normaloff>:/images/xor.png</iconset>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="Circuit1">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>100</y>
+          <width>641</width>
+          <height>281</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="Resources.qrc">:/images/level1.jpg</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="TargetOutput1">
+        <property name="geometry">
+         <rect>
+          <x>780</x>
+          <y>310</y>
+          <width>63</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">/* QLabel for Current Output and Target Output */
+QLabel {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF; /* White text */
+    background-color: #1A5276; /* Dark blue background */
+    border: 2px solid #4DC3FF; /* Light blue border */
+    padding: 8px; /* Padding for readability */
+    border-radius: 5px; /* Rounded corners */
+}
+</string>
+        </property>
+        <property name="text">
+         <string>1</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="Gate1Image">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>110</y>
+          <width>81</width>
+          <height>121</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel{
+background-color: transparent; color: transparent;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="Resources.qrc">:/images/and.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="Gate2">
+        <property name="geometry">
+         <rect>
+          <x>530</x>
+          <y>170</y>
+          <width>101</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox {
+background-color: rgb(9, 40, 93);
+color: white;
+font: bold 9pt;
+padding: 5px 10px;
+}
+</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>AND</string>
+         </property>
+         <property name="icon">
+          <iconset resource="Resources.qrc">
+           <normaloff>:/images/and.png</normaloff>:/images/and.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>OR</string>
+         </property>
+         <property name="icon">
+          <iconset resource="Resources.qrc">
+           <normaloff>:/images/or.png</normaloff>:/images/or.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>XOR</string>
+         </property>
+         <property name="icon">
+          <iconset resource="Resources.qrc">
+           <normaloff>:/images/xor.png</normaloff>:/images/xor.png</iconset>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="Gate2Image">
+        <property name="geometry">
+         <rect>
+          <x>540</x>
+          <y>210</y>
+          <width>81</width>
+          <height>131</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel{
+background-color: transparent; color: transparent;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="Resources.qrc">:/images/and.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_12">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>91</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF; /* White text */
+    background-color: #004080; /* Blue background for text box */
+    border: 2px solid #4DC3FF; /* Light blue border */
+    padding: 8px; /* Padding for better readability */
+    border-radius: 5px; /* Rounded corners */
+}</string>
+        </property>
+        <property name="text">
+         <string>Level 1</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_18">
+        <property name="geometry">
+         <rect>
+          <x>620</x>
+          <y>20</y>
+          <width>241</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+    font-size: 15px;
+    font-weight: normal;
+    color: #FFFFFF; /* White text */
+    border: 2px solid rgb(62, 206, 158); /* Light blue border */
+    padding: 8px; /* Padding for better readability */
+    border-radius: 5px; /* Rounded corners */
+}</string>
+        </property>
+        <property name="text">
+         <string>Experiment with different gates!</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="outputCircle1">
+        <property name="geometry">
+         <rect>
+          <x>690</x>
+          <y>260</y>
+          <width>51</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(128, 128, 128); border-radius: 25px;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <zorder>Circuit1</zorder>
+       <zorder>level1BackButton</zorder>
+       <zorder>inputA1</zorder>
+       <zorder>inputB1</zorder>
+       <zorder>inputC1</zorder>
+       <zorder>CurrentOutput1</zorder>
+       <zorder>submitLevel1Button</zorder>
+       <zorder>level1FeedbackLabel</zorder>
+       <zorder>CurrentDisplay1</zorder>
+       <zorder>TargetDisplay1</zorder>
+       <zorder>Gate1</zorder>
+       <zorder>TargetOutput1</zorder>
+       <zorder>Gate1Image</zorder>
+       <zorder>Gate2</zorder>
+       <zorder>Gate2Image</zorder>
+       <zorder>label_12</zorder>
+       <zorder>label_18</zorder>
+       <zorder>outputCircle1</zorder>
+      </widget>
+      <widget class="QWidget" name="level2Page">
+       <widget class="QPushButton" name="level2BackButton">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>430</y>
+          <width>83</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+    background-color: rgb(77, 135, 234); /* Darker Blue for Back Button */
+    font-size: 16px;
+    font-weight: bold 12 pt;
+    color: #FFFFFF; /* White Text */
+    border: 1px solid #004080; /* Subtle border */
+    border-radius: 8px;
+    padding: 8px 16px;
+}
+
+QPushButton:hover {
+    background-color: #4DC3FF; /* Light Blue Hover for Back Button */
+    color: #002966; /* Dark Blue Text */
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>Back</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="inputA2">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>170</y>
+          <width>61</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color: rgb(9, 40, 93);
+color: white;
+font: bold 12pt
+}
+
+
+</string>
+        </property>
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="inputB2">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>250</y>
+          <width>61</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color: rgb(9, 40, 93);
+color: white;
+font: bold 12pt
+}
+
+
+</string>
+        </property>
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="Gate3">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>80</y>
+          <width>101</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox {
+background-color: rgb(9, 40, 93);
+color: white;
+font: bold 9pt;
+padding: 5px 10px;
+}
+</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>NOR</string>
+         </property>
+         <property name="icon">
+          <iconset resource="Resources.qrc">
+           <normaloff>:/images/nor.png</normaloff>:/images/nor.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>AND</string>
+         </property>
+         <property name="icon">
+          <iconset resource="Resources.qrc">
+           <normaloff>:/images/and.png</normaloff>:/images/and.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>NOT</string>
+         </property>
+         <property name="icon">
+          <iconset resource="Resources.qrc">
+           <normaloff>:/images/not.png</normaloff>:/images/not.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>XOR</string>
+         </property>
+         <property name="icon">
+          <iconset resource="Resources.qrc">
+           <normaloff>:/images/xor.png</normaloff>:/images/xor.png</iconset>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="Gate4">
+        <property name="geometry">
+         <rect>
+          <x>510</x>
+          <y>120</y>
+          <width>101</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox {
+background-color: rgb(9, 40, 93);
+color: white;
+font: bold 9pt;
+padding: 5px 10px;
+}
+</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>NOT</string>
+         </property>
+         <property name="icon">
+          <iconset resource="Resources.qrc">
+           <normaloff>:/images/not.png</normaloff>:/images/not.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>AND</string>
+         </property>
+         <property name="icon">
+          <iconset resource="Resources.qrc">
+           <normaloff>:/images/and.png</normaloff>:/images/and.png</iconset>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="Circuit2">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>100</y>
+          <width>621</width>
+          <height>261</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="Resources.qrc">:/images/level2.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="Gate3Image">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>130</y>
+          <width>141</width>
+          <height>191</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel{
+background-color: transparent; color: transparent;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="Resources.qrc">:/images/nor.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="Gate4Image">
+        <property name="geometry">
+         <rect>
+          <x>510</x>
+          <y>170</y>
+          <width>111</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel{
+background-color: transparent; color: transparent;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="Resources.qrc">:/images/not.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="CurrentDisplay2">
+        <property name="geometry">
+         <rect>
+          <x>800</x>
+          <y>110</y>
+          <width>171</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">/* QLabel for Current Output and Target Output */
+QLabel {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF; /* White text */
+    background-color: #1A5276; /* Dark blue background */
+    border: 2px solid #4DC3FF; /* Light blue border */
+    padding: 8px; /* Padding for readability */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Centered text */
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Current Output:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="CurrentOutput2">
+        <property name="geometry">
+         <rect>
+          <x>800</x>
+          <y>180</y>
+          <width>63</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">/* QLabel for Current Output and Target Output */
+QLabel {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF; /* White text */
+    background-color: #1A5276; /* Dark blue background */
+    border: 2px solid #4DC3FF; /* Light blue border */
+    padding: 8px; /* Padding for readability */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Centered text */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="TargetOutput2">
+        <property name="geometry">
+         <rect>
+          <x>800</x>
+          <y>310</y>
+          <width>63</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">/* QLabel for Current Output and Target Output */
+QLabel {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF; /* White text */
+    background-color: #1A5276; /* Dark blue background */
+    border: 2px solid #4DC3FF; /* Light blue border */
+    padding: 8px; /* Padding for readability */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Centered text */
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>1</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="TargetDisplay2">
+        <property name="geometry">
+         <rect>
+          <x>800</x>
+          <y>240</y>
+          <width>171</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">/* QLabel for Current Output and Target Output */
+QLabel {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF; /* White text */
+    background-color: #1A5276; /* Dark blue background */
+    border: 2px solid #4DC3FF; /* Light blue border */
+    padding: 8px; /* Padding for readability */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Centered text */
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Target Output:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="level2FeedbackLabel">
+        <property name="geometry">
+         <rect>
+          <x>340</x>
+          <y>420</y>
+          <width>251</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="submitLevel2Button">
+        <property name="geometry">
+         <rect>
+          <x>820</x>
+          <y>420</y>
+          <width>171</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: rgb(62, 206, 158);/* Medium blue background */
+    color: #FFFFFF; /* White text */
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid rgb(7, 30, 70);/* Darker blue border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px 20px;
+}
+
+QPushButton:hover {
+    color: #002966; /* Dark blue text */
+}
+
+
+QPushButton:pressed {
+    background-color: rgb(7, 30, 70); /* Dark blue background */
+    border: 2px solid #4DC3FF; /* Light blue border */
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Submit</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_13">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>91</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF; /* White text */
+    background-color: #004080; /* Blue background for text box */
+    border: 2px solid #4DC3FF; /* Light blue border */
+    padding: 8px; /* Padding for better readability */
+    border-radius: 5px; /* Rounded corners */
+}</string>
+        </property>
+        <property name="text">
+         <string>Level 2</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_19">
+        <property name="geometry">
+         <rect>
+          <x>700</x>
+          <y>20</y>
+          <width>261</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+    font-size: 15px;
+    font-weight: normal;
+    color: #FFFFFF; /* White text */
+    border: 2px solid rgb(62, 206, 158); /* Light blue border */
+    padding: 8px; /* Padding for better readability */
+    border-radius: 5px; /* Rounded corners */
+}</string>
+        </property>
+        <property name="text">
+         <string>Remember the NOT gate is the only gate with one input!</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="outputCircle2">
+        <property name="geometry">
+         <rect>
+          <x>660</x>
+          <y>200</y>
+          <width>51</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(128, 128, 128); border-radius: 25px;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <zorder>level2BackButton</zorder>
+       <zorder>inputA2</zorder>
+       <zorder>inputB2</zorder>
+       <zorder>Circuit2</zorder>
+       <zorder>Gate3Image</zorder>
+       <zorder>Gate4Image</zorder>
+       <zorder>CurrentDisplay2</zorder>
+       <zorder>CurrentOutput2</zorder>
+       <zorder>TargetOutput2</zorder>
+       <zorder>TargetDisplay2</zorder>
+       <zorder>level2FeedbackLabel</zorder>
+       <zorder>submitLevel2Button</zorder>
+       <zorder>label_13</zorder>
+       <zorder>Gate4</zorder>
+       <zorder>Gate3</zorder>
+       <zorder>label_19</zorder>
+       <zorder>outputCircle2</zorder>
+      </widget>
+      <widget class="QWidget" name="level3Page">
+       <widget class="QPushButton" name="level3BackButton">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>430</y>
+          <width>83</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+    background-color: rgb(77, 135, 234); /* Darker Blue for Back Button */
+    font-size: 16px;
+    font-weight: bold 12 pt;
+    color: #FFFFFF; /* White Text */
+    border: 1px solid #004080; /* Subtle border */
+    border-radius: 8px;
+    padding: 8px 16px;
+}
+
+QPushButton:hover {
+    background-color: #4DC3FF; /* Light Blue Hover for Back Button */
+    color: #002966; /* Dark Blue Text */
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>Back</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="submitLevel3Button">
+        <property name="geometry">
+         <rect>
+          <x>820</x>
+          <y>420</y>
+          <width>171</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: rgb(62, 206, 158);/* Medium blue background */
+    color: #FFFFFF; /* White text */
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid rgb(7, 30, 70);/* Darker blue border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px 20px;
+}
+
+QPushButton:hover {
+    color: #002966; /* Dark blue text */
+}
+
+
+QPushButton:pressed {
+    background-color: rgb(7, 30, 70); /* Dark blue background */
+    border: 2px solid #4DC3FF; /* Light blue border */
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Submit</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="level3FeedbackLabel">
+        <property name="geometry">
+         <rect>
+          <x>350</x>
+          <y>420</y>
+          <width>251</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="TargetOutput3">
+        <property name="geometry">
+         <rect>
+          <x>810</x>
+          <y>300</y>
+          <width>63</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">/* QLabel for Current Output and Target Output */
+QLabel {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF; /* White text */
+    background-color: #1A5276; /* Dark blue background */
+    border: 2px solid #4DC3FF; /* Light blue border */
+    padding: 8px; /* Padding for readability */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Centered text */
+}
+</string>
+        </property>
+        <property name="text">
+         <string>1</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="TargetDisplay3">
+        <property name="geometry">
+         <rect>
+          <x>810</x>
+          <y>230</y>
+          <width>171</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">/* QLabel for Current Output and Target Output */
+QLabel {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF; /* White text */
+    background-color: #1A5276; /* Dark blue background */
+    border: 2px solid #4DC3FF; /* Light blue border */
+    padding: 8px; /* Padding for readability */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Centered text */
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Target Output:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="CurrentOutput3">
+        <property name="geometry">
+         <rect>
+          <x>810</x>
+          <y>170</y>
+          <width>63</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">/* QLabel for Current Output and Target Output */
+QLabel {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF; /* White text */
+    background-color: #1A5276; /* Dark blue background */
+    border: 2px solid #4DC3FF; /* Light blue border */
+    padding: 8px; /* Padding for readability */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Centered text */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="CurrentDisplay3">
+        <property name="geometry">
+         <rect>
+          <x>810</x>
+          <y>100</y>
+          <width>171</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">/* QLabel for Current Output and Target Output */
+QLabel {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF; /* White text */
+    background-color: #1A5276; /* Dark blue background */
+    border: 2px solid #4DC3FF; /* Light blue border */
+    padding: 8px; /* Padding for readability */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Centered text */
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Current Output: </string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="Circuit3">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>80</y>
+          <width>631</width>
+          <height>321</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="Resources.qrc">:/images/level3.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="inputA3">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>100</y>
+          <width>61</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color: rgb(9, 40, 93);
+color: white;
+font: bold 12pt
+}
+
+
+</string>
+        </property>
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="inputB3">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>160</y>
+          <width>61</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color: rgb(9, 40, 93);
+color: white;
+font: bold 12pt
+}
+
+
+</string>
+        </property>
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="inputC3">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>320</y>
+          <width>61</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color: rgb(9, 40, 93);
+color: white;
+font: bold 12pt
+}
+
+
+</string>
+        </property>
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="Gate5">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>50</y>
+          <width>111</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox {
+background-color: rgb(9, 40, 93);
+color: white;
+font: bold 9pt;
+padding: 5px 10px;
+}
+</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>NAND</string>
+         </property>
+         <property name="icon">
+          <iconset resource="Resources.qrc">
+           <normaloff>:/images/nand.png</normaloff>:/images/nand.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>AND</string>
+         </property>
+         <property name="icon">
+          <iconset resource="Resources.qrc">
+           <normaloff>:/images/and.png</normaloff>:/images/and.png</iconset>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="Gate6">
+        <property name="geometry">
+         <rect>
+          <x>270</x>
+          <y>390</y>
+          <width>101</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox {
+background-color: rgb(9, 40, 93);
+color: white;
+font: bold 9pt;
+padding: 5px 10px;
+}
+</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>NOR</string>
+         </property>
+         <property name="icon">
+          <iconset resource="Resources.qrc">
+           <normaloff>:/images/nor.png</normaloff>:/images/nor.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>OR</string>
+         </property>
+         <property name="icon">
+          <iconset resource="Resources.qrc">
+           <normaloff>:/images/or.png</normaloff>:/images/or.png</iconset>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="Gate7">
+        <property name="geometry">
+         <rect>
+          <x>410</x>
+          <y>70</y>
+          <width>101</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox {
+background-color: rgb(9, 40, 93);
+color: white;
+font: bold 9pt;
+padding: 5px 10px;
+}
+</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>NOT</string>
+         </property>
+         <property name="icon">
+          <iconset resource="Resources.qrc">
+           <normaloff>:/images/not.png</normaloff>:/images/not.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>XOR</string>
+         </property>
+         <property name="icon">
+          <iconset resource="Resources.qrc">
+           <normaloff>:/images/xor.png</normaloff>:/images/xor.png</iconset>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="Gate8">
+        <property name="geometry">
+         <rect>
+          <x>610</x>
+          <y>130</y>
+          <width>101</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox {
+background-color: rgb(9, 40, 93);
+color: white;
+font: bold 9pt;
+padding: 5px 10px;
+}
+</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>OR</string>
+         </property>
+         <property name="icon">
+          <iconset resource="Resources.qrc">
+           <normaloff>:/images/or.png</normaloff>:/images/or.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>XOR</string>
+         </property>
+         <property name="icon">
+          <iconset resource="Resources.qrc">
+           <normaloff>:/images/xor.png</normaloff>:/images/xor.png</iconset>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="Gate5Image">
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>100</y>
+          <width>91</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel{
+background-color: transparent; color: transparent;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="Resources.qrc">:/images/nand.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="Gate7Image">
+        <property name="geometry">
+         <rect>
+          <x>410</x>
+          <y>100</y>
+          <width>91</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel{
+background-color: transparent; color: transparent;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="Resources.qrc">:/images/not.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="Gate6Image">
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>250</y>
+          <width>111</width>
+          <height>121</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel{
+background-color: transparent; color: transparent;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="Resources.qrc">:/images/nor.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="Gate8Image">
+        <property name="geometry">
+         <rect>
+          <x>620</x>
+          <y>170</y>
+          <width>81</width>
+          <height>121</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel{
+background-color: transparent; color: transparent;
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="Resources.qrc">:/images/or.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_14">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>91</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF; /* White text */
+    background-color: #004080; /* Blue background for text box */
+    border: 2px solid #4DC3FF; /* Light blue border */
+    padding: 8px; /* Padding for better readability */
+    border-radius: 5px; /* Rounded corners */
+}</string>
+        </property>
+        <property name="text">
+         <string>Level 3</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_20">
+        <property name="geometry">
+         <rect>
+          <x>720</x>
+          <y>10</y>
+          <width>241</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+    font-size: 15px;
+    font-weight: normal;
+    color: #FFFFFF; /* White text */
+    border: 2px solid rgb(62, 206, 158); /* Light blue border */
+    padding: 8px; /* Padding for better readability */
+    border-radius: 5px; /* Rounded corners */
+}</string>
+        </property>
+        <property name="text">
+         <string>Explore all the ways you can configure the output.</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="outputCircle3">
+        <property name="geometry">
+         <rect>
+          <x>740</x>
+          <y>210</y>
+          <width>51</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(128, 128, 128); border-radius: 25px;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <zorder>level3BackButton</zorder>
+       <zorder>submitLevel3Button</zorder>
+       <zorder>level3FeedbackLabel</zorder>
+       <zorder>TargetOutput3</zorder>
+       <zorder>TargetDisplay3</zorder>
+       <zorder>CurrentOutput3</zorder>
+       <zorder>CurrentDisplay3</zorder>
+       <zorder>Circuit3</zorder>
+       <zorder>inputA3</zorder>
+       <zorder>inputB3</zorder>
+       <zorder>inputC3</zorder>
+       <zorder>Gate6</zorder>
+       <zorder>Gate7</zorder>
+       <zorder>Gate8</zorder>
+       <zorder>Gate5Image</zorder>
+       <zorder>Gate7Image</zorder>
+       <zorder>Gate6Image</zorder>
+       <zorder>Gate8Image</zorder>
+       <zorder>label_14</zorder>
+       <zorder>Gate5</zorder>
+       <zorder>label_20</zorder>
+       <zorder>outputCircle3</zorder>
+      </widget>
+      <widget class="QWidget" name="level4Page">
+       <widget class="QPushButton" name="level4BackButton">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>430</y>
+          <width>83</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+    background-color: rgb(77, 135, 234); /* Darker Blue for Back Button */
+    font-size: 16px;
+    font-weight: bold 12 pt;
+    color: #FFFFFF; /* White Text */
+    border: 1px solid #004080; /* Subtle border */
+    border-radius: 8px;
+    padding: 8px 16px;
+}
+
+QPushButton:hover {
+    background-color: #4DC3FF; /* Light Blue Hover for Back Button */
+    color: #002966; /* Dark Blue Text */
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>Back</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="Circuit4">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>70</y>
+          <width>651</width>
+          <height>331</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="Resources.qrc">:/images/level4.jpg</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="level4FeedbackLabel">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>430</y>
+          <width>251</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="TargetOutput4">
+        <property name="geometry">
+         <rect>
+          <x>820</x>
+          <y>290</y>
+          <width>63</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">/* QLabel for Current Output and Target Output */
+QLabel {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF; /* White text */
+    background-color: #1A5276; /* Dark blue background */
+    border: 2px solid #4DC3FF; /* Light blue border */
+    padding: 8px; /* Padding for readability */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Centered text */
+}
+</string>
+        </property>
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="TargetDisplay4">
+        <property name="geometry">
+         <rect>
+          <x>820</x>
+          <y>220</y>
+          <width>171</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">/* QLabel for Current Output and Target Output */
+QLabel {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF; /* White text */
+    background-color: #1A5276; /* Dark blue background */
+    border: 2px solid #4DC3FF; /* Light blue border */
+    padding: 8px; /* Padding for readability */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Centered text */
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Target Output:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="CurrentOutput4">
+        <property name="geometry">
+         <rect>
+          <x>820</x>
+          <y>160</y>
+          <width>63</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">/* QLabel for Current Output and Target Output */
+QLabel {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF; /* White text */
+    background-color: #1A5276; /* Dark blue background */
+    border: 2px solid #4DC3FF; /* Light blue border */
+    padding: 8px; /* Padding for readability */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Centered text */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="CurrentDisplay4">
+        <property name="geometry">
+         <rect>
+          <x>820</x>
+          <y>90</y>
+          <width>171</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">/* QLabel for Current Output and Target Output */
+QLabel {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF; /* White text */
+    background-color: #1A5276; /* Dark blue background */
+    border: 2px solid #4DC3FF; /* Light blue border */
+    padding: 8px; /* Padding for readability */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Centered text */
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Current Output</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="submitLevel4Button">
+        <property name="geometry">
+         <rect>
+          <x>820</x>
+          <y>420</y>
+          <width>171</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: rgb(62, 206, 158);/* Medium blue background */
+    color: #FFFFFF; /* White text */
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid rgb(7, 30, 70);/* Darker blue border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px 20px;
+}
+
+QPushButton:hover {
+    color: #002966; /* Dark blue text */
+}
+
+
+QPushButton:pressed {
+    background-color: rgb(7, 30, 70); /* Dark blue background */
+    border: 2px solid #4DC3FF; /* Light blue border */
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Submit</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="inputA4">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>120</y>
+          <width>61</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color: rgb(9, 40, 93);
+color: white;
+font: bold 12pt
+}
+
+
+</string>
+        </property>
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="inputB4">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>180</y>
+          <width>61</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color: rgb(9, 40, 93);
+color: white;
+font: bold 12pt
+}
+
+
+</string>
+        </property>
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="inputC4">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>240</y>
+          <width>61</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color: rgb(9, 40, 93);
+color: white;
+font: bold 12pt
+}
+
+
+</string>
+        </property>
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="inputD4">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>300</y>
+          <width>61</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color: rgb(9, 40, 93);
+color: white;
+font: bold 12pt
+}
+
+
+</string>
+        </property>
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="Gate9">
+        <property name="geometry">
+         <rect>
+          <x>270</x>
+          <y>110</y>
+          <width>101</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox {
+background-color: rgb(9, 40, 93);
+color: white;
+font: bold 9pt;
+padding: 5px 10px;
+}
+</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>XOR</string>
+         </property>
+         <property name="icon">
+          <iconset resource="Resources.qrc">
+           <normaloff>:/images/xor.png</normaloff>:/images/xor.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>OR</string>
+         </property>
+         <property name="icon">
+          <iconset resource="Resources.qrc">
+           <normaloff>:/images/or.png</normaloff>:/images/or.png</iconset>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="Gate10">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>380</y>
+          <width>101</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox {
+background-color: rgb(9, 40, 93);
+color: white;
+font: bold 9pt;
+padding: 5px 10px;
+}
+</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>NOT</string>
+         </property>
+         <property name="icon">
+          <iconset resource="Resources.qrc">
+           <normaloff>:/images/not.png</normaloff>:/images/not.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>NAND</string>
+         </property>
+         <property name="icon">
+          <iconset resource="Resources.qrc">
+           <normaloff>:/images/nand.png</normaloff>:/images/nand.png</iconset>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="Gate11">
+        <property name="geometry">
+         <rect>
+          <x>450</x>
+          <y>50</y>
+          <width>101</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox {
+background-color: rgb(9, 40, 93);
+color: white;
+font: bold 9pt;
+padding: 5px 10px;
+}
+</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>AND</string>
+         </property>
+         <property name="icon">
+          <iconset resource="Resources.qrc">
+           <normaloff>:/images/and.png</normaloff>:/images/and.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>OR</string>
+         </property>
+         <property name="icon">
+          <iconset resource="Resources.qrc">
+           <normaloff>:/images/or.png</normaloff>:/images/or.png</iconset>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="Gate12">
+        <property name="geometry">
+         <rect>
+          <x>610</x>
+          <y>70</y>
+          <width>101</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox {
+background-color: rgb(9, 40, 93);
+color: white;
+font: bold 9pt;
+padding: 5px 10px;
+}
+</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>OR</string>
+         </property>
+         <property name="icon">
+          <iconset resource="Resources.qrc">
+           <normaloff>:/images/or.png</normaloff>:/images/or.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>XOR</string>
+         </property>
+         <property name="icon">
+          <iconset resource="Resources.qrc">
+           <normaloff>:/images/xor.png</normaloff>:/images/xor.png</iconset>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="Gate9Image">
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>150</y>
+          <width>111</width>
+          <height>141</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel{
+background-color: transparent; color: transparent;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="Resources.qrc">:/images/xor.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="Gate10Image">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>280</y>
+          <width>101</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel{
+background-color: transparent; color: transparent;
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="Resources.qrc">:/images/not.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="Gate11Image">
+        <property name="geometry">
+         <rect>
+          <x>460</x>
+          <y>100</y>
+          <width>91</width>
+          <height>121</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel{
+background-color: transparent; color: transparent;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="Resources.qrc">:/images/and.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="Gate12Image">
+        <property name="geometry">
+         <rect>
+          <x>610</x>
+          <y>120</y>
+          <width>91</width>
+          <height>141</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel{
+background-color: transparent; color: transparent;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="Resources.qrc">:/images/or.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_15">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>91</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF; /* White text */
+    background-color: #004080; /* Blue background for text box */
+    border: 2px solid #4DC3FF; /* Light blue border */
+    padding: 8px; /* Padding for better readability */
+    border-radius: 5px; /* Rounded corners */
+}</string>
+        </property>
+        <property name="text">
+         <string>Level 4</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_21">
+        <property name="geometry">
+         <rect>
+          <x>720</x>
+          <y>10</y>
+          <width>271</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+    font-size: 15px;
+    font-weight: normal;
+    color: #FFFFFF; /* White text */
+    border: 2px solid rgb(62, 206, 158); /* Light blue border */
+    padding: 8px; /* Padding for better readability */
+    border-radius: 5px; /* Rounded corners */
+}</string>
+        </property>
+        <property name="text">
+         <string>Remember the outputs of each gate.</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="outputCircle4">
+        <property name="geometry">
+         <rect>
+          <x>750</x>
+          <y>170</y>
+          <width>51</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(128, 128, 128); border-radius: 25px;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="level5Page">
+       <widget class="QPushButton" name="level5BackButton">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>430</y>
+          <width>83</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+    background-color: rgb(77, 135, 234); /* Darker Blue for Back Button */
+    font-size: 16px;
+    font-weight: bold 12 pt;
+    color: #FFFFFF; /* White Text */
+    border: 1px solid #004080; /* Subtle border */
+    border-radius: 8px;
+    padding: 8px 16px;
+}
+
+QPushButton:hover {
+    background-color: #4DC3FF; /* Light Blue Hover for Back Button */
+    color: #002966; /* Dark Blue Text */
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>Back</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="submitLevel5Button">
+        <property name="geometry">
+         <rect>
+          <x>820</x>
+          <y>420</y>
+          <width>171</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: rgb(62, 206, 158);/* Medium blue background */
+    color: #FFFFFF; /* White text */
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid rgb(7, 30, 70);/* Darker blue border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px 20px;
+}
+
+QPushButton:hover {
+    color: #002966; /* Dark blue text */
+}
+
+
+QPushButton:pressed {
+    background-color: rgb(7, 30, 70); /* Dark blue background */
+    border: 2px solid #4DC3FF; /* Light blue border */
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Submit</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="Circuit5">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>60</y>
+          <width>641</width>
+          <height>341</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="Resources.qrc">:/images/level5.jpg</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="TargetOutput5">
+        <property name="geometry">
+         <rect>
+          <x>810</x>
+          <y>290</y>
+          <width>63</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">/* QLabel for Current Output and Target Output */
+QLabel {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF; /* White text */
+    background-color: #1A5276; /* Dark blue background */
+    border: 2px solid #4DC3FF; /* Light blue border */
+    padding: 8px; /* Padding for readability */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Centered text */
+}
+</string>
+        </property>
+        <property name="text">
+         <string>1</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="TargetDisplay5">
+        <property name="geometry">
+         <rect>
+          <x>810</x>
+          <y>220</y>
+          <width>171</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">/* QLabel for Current Output and Target Output */
+QLabel {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF; /* White text */
+    background-color: #1A5276; /* Dark blue background */
+    border: 2px solid #4DC3FF; /* Light blue border */
+    padding: 8px; /* Padding for readability */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Centered text */
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Target Display: </string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="CurrentDisplay5">
+        <property name="geometry">
+         <rect>
+          <x>810</x>
+          <y>90</y>
+          <width>171</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">/* QLabel for Current Output and Target Output */
+QLabel {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF; /* White text */
+    background-color: #1A5276; /* Dark blue background */
+    border: 2px solid #4DC3FF; /* Light blue border */
+    padding: 8px; /* Padding for readability */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Centered text */
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Current Display: </string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="CurrentOutput5">
+        <property name="geometry">
+         <rect>
+          <x>810</x>
+          <y>160</y>
+          <width>63</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">/* QLabel for Current Output and Target Output */
+QLabel {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF; /* White text */
+    background-color: #1A5276; /* Dark blue background */
+    border: 2px solid #4DC3FF; /* Light blue border */
+    padding: 8px; /* Padding for readability */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Centered text */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="level5FeedbackLabel">
+        <property name="geometry">
+         <rect>
+          <x>350</x>
+          <y>430</y>
+          <width>251</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="inputA5">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>90</y>
+          <width>61</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color: rgb(9, 40, 93);
+color: white;
+font: bold 12pt
+}
+
+
+</string>
+        </property>
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="inputB5">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>140</y>
+          <width>61</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color: rgb(9, 40, 93);
+color: white;
+font: bold 12pt
+}
+
+
+</string>
+        </property>
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="inputC5">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>220</y>
+          <width>61</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color: rgb(9, 40, 93);
+color: white;
+font: bold 12pt
+}
+
+
+</string>
+        </property>
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="inputD5">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>270</y>
+          <width>61</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color: rgb(9, 40, 93);
+color: white;
+font: bold 12pt
+}
+
+
+</string>
+        </property>
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="Gate13">
+        <property name="geometry">
+         <rect>
+          <x>270</x>
+          <y>30</y>
+          <width>101</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox {
+background-color: rgb(9, 40, 93);
+color: white;
+font: bold 9pt;
+padding: 5px 10px;
+}
+</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>XOR</string>
+         </property>
+         <property name="icon">
+          <iconset resource="Resources.qrc">
+           <normaloff>:/images/xor.png</normaloff>:/images/xor.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>NOR</string>
+         </property>
+         <property name="icon">
+          <iconset resource="Resources.qrc">
+           <normaloff>:/images/nor.png</normaloff>:/images/nor.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>AND</string>
+         </property>
+         <property name="icon">
+          <iconset resource="Resources.qrc">
+           <normaloff>:/images/and.png</normaloff>:/images/and.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>NAND</string>
+         </property>
+         <property name="icon">
+          <iconset resource="Resources.qrc">
+           <normaloff>:/images/nand.png</normaloff>:/images/nand.png</iconset>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="Gate14">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>330</y>
+          <width>101</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox {
+background-color: rgb(9, 40, 93);
+color: white;
+font: bold 9pt;
+padding: 5px 10px;
+}
+</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>NOR</string>
+         </property>
+         <property name="icon">
+          <iconset resource="Resources.qrc">
+           <normaloff>:/images/nor.png</normaloff>:/images/nor.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>XOR</string>
+         </property>
+         <property name="icon">
+          <iconset resource="Resources.qrc">
+           <normaloff>:/images/xor.png</normaloff>:/images/xor.png</iconset>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="Gate15">
+        <property name="geometry">
+         <rect>
+          <x>460</x>
+          <y>100</y>
+          <width>101</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox {
+background-color: rgb(9, 40, 93);
+color: white;
+font: bold 9pt;
+padding: 5px 10px;
+}
+</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>OR</string>
+         </property>
+         <property name="icon">
+          <iconset resource="Resources.qrc">
+           <normaloff>:/images/or.png</normaloff>:/images/or.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>NOR</string>
+         </property>
+         <property name="icon">
+          <iconset resource="Resources.qrc">
+           <normaloff>:/images/nor.png</normaloff>:/images/nor.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>XOR</string>
+         </property>
+         <property name="icon">
+          <iconset resource="Resources.qrc">
+           <normaloff>:/images/xor.png</normaloff>:/images/xor.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string/>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="Gate16">
+        <property name="geometry">
+         <rect>
+          <x>460</x>
+          <y>380</y>
+          <width>101</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox {
+background-color: rgb(9, 40, 93);
+color: white;
+font: bold 9pt;
+padding: 5px 10px;
+}
+</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>NOT</string>
+         </property>
+         <property name="icon">
+          <iconset resource="Resources.qrc">
+           <normaloff>:/images/not.png</normaloff>:/images/not.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>NAND</string>
+         </property>
+         <property name="icon">
+          <iconset resource="Resources.qrc">
+           <normaloff>:/images/nand.png</normaloff>:/images/nand.png</iconset>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="Gate17">
+        <property name="geometry">
+         <rect>
+          <x>600</x>
+          <y>130</y>
+          <width>101</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox {
+background-color: rgb(9, 40, 93);
+color: white;
+font: bold 9pt;
+padding: 5px 10px;
+}
+</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>OR</string>
+         </property>
+         <property name="icon">
+          <iconset resource="Resources.qrc">
+           <normaloff>:/images/or.png</normaloff>:/images/or.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>AND</string>
+         </property>
+         <property name="icon">
+          <iconset resource="Resources.qrc">
+           <normaloff>:/images/and.png</normaloff>:/images/and.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string/>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="Gate13Image">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>70</y>
+          <width>81</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel{
+background-color: transparent; color: transparent;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="Resources.qrc">:/images/xor.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="Gate17Image">
+        <property name="geometry">
+         <rect>
+          <x>610</x>
+          <y>170</y>
+          <width>81</width>
+          <height>101</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel{
+background-color: transparent; color: transparent;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="Resources.qrc">:/images/or.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="Gate16Image">
+        <property name="geometry">
+         <rect>
+          <x>460</x>
+          <y>280</y>
+          <width>91</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel{
+background-color: transparent; color: transparent;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="Resources.qrc">:/images/not.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="Gate15Image">
+        <property name="geometry">
+         <rect>
+          <x>470</x>
+          <y>140</y>
+          <width>81</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel{
+background-color: transparent; color: transparent;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="Resources.qrc">:/images/or.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="Gate14Image">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>210</y>
+          <width>101</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel{
+background-color: transparent; color: transparent;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="Resources.qrc">:/images/nor.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_16">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>91</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF; /* White text */
+    background-color: #004080; /* Blue background for text box */
+    border: 2px solid #4DC3FF; /* Light blue border */
+    padding: 8px; /* Padding for better readability */
+    border-radius: 5px; /* Rounded corners */
+}</string>
+        </property>
+        <property name="text">
+         <string>Level 5</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_22">
+        <property name="geometry">
+         <rect>
+          <x>740</x>
+          <y>10</y>
+          <width>241</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+    font-size: 15px;
+    font-weight: normal;
+    color: #FFFFFF; /* White text */
+    border: 2px solid rgb(62, 206, 158); /* Light blue border */
+    padding: 8px; /* Padding for better readability */
+    border-radius: 5px; /* Rounded corners */
+}</string>
+        </property>
+        <property name="text">
+         <string>Carefully observe the inputs to each gate.</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="outputCircle5">
+        <property name="geometry">
+         <rect>
+          <x>730</x>
+          <y>190</y>
+          <width>51</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(128, 128, 128); border-radius: 25px;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="level6Page">
+       <widget class="QPushButton" name="level6BackButton">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>430</y>
+          <width>83</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+    background-color: rgb(77, 135, 234); /* Darker Blue for Back Button */
+    font-size: 16px;
+    font-weight: bold 12 pt;
+    color: #FFFFFF; /* White Text */
+    border: 1px solid #004080; /* Subtle border */
+    border-radius: 8px;
+    padding: 8px 16px;
+}
+
+QPushButton:hover {
+    background-color: #4DC3FF; /* Light Blue Hover for Back Button */
+    color: #002966; /* Dark Blue Text */
+}
+
+
+</string>
+        </property>
+        <property name="text">
+         <string>Back</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="TargetOutput6">
+        <property name="geometry">
+         <rect>
+          <x>810</x>
+          <y>300</y>
+          <width>63</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">/* QLabel for Current Output and Target Output */
+QLabel {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF; /* White text */
+    background-color: #1A5276; /* Dark blue background */
+    border: 2px solid #4DC3FF; /* Light blue border */
+    padding: 8px; /* Padding for readability */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Centered text */
+}
+</string>
+        </property>
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="TargetDisplay6">
+        <property name="geometry">
+         <rect>
+          <x>810</x>
+          <y>230</y>
+          <width>171</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">/* QLabel for Current Output and Target Output */
+QLabel {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF; /* White text */
+    background-color: #1A5276; /* Dark blue background */
+    border: 2px solid #4DC3FF; /* Light blue border */
+    padding: 8px; /* Padding for readability */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Centered text */
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Target Output:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="CurrentOutput6">
+        <property name="geometry">
+         <rect>
+          <x>810</x>
+          <y>170</y>
+          <width>63</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">/* QLabel for Current Output and Target Output */
+QLabel {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF; /* White text */
+    background-color: #1A5276; /* Dark blue background */
+    border: 2px solid #4DC3FF; /* Light blue border */
+    padding: 8px; /* Padding for readability */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Centered text */
+}
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="CurrentDisplay6">
+        <property name="geometry">
+         <rect>
+          <x>810</x>
+          <y>100</y>
+          <width>171</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">/* QLabel for Current Output and Target Output */
+QLabel {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF; /* White text */
+    background-color: #1A5276; /* Dark blue background */
+    border: 2px solid #4DC3FF; /* Light blue border */
+    padding: 8px; /* Padding for readability */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Centered text */
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Current Output:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="level6FeedbackLabel">
+        <property name="geometry">
+         <rect>
+          <x>350</x>
+          <y>430</y>
+          <width>251</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="submitLevel6Button">
+        <property name="geometry">
+         <rect>
+          <x>820</x>
+          <y>420</y>
+          <width>171</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: rgb(62, 206, 158);/* Medium blue background */
+    color: #FFFFFF; /* White text */
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid rgb(7, 30, 70);/* Darker blue border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px 20px;
+}
+
+QPushButton:hover {
+    color: #002966; /* Dark blue text */
+}
+
+
+QPushButton:pressed {
+    background-color: rgb(7, 30, 70); /* Dark blue background */
+    border: 2px solid #4DC3FF; /* Light blue border */
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Submit</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="inputA6">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>90</y>
+          <width>61</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color: rgb(9, 40, 93);
+color: white;
+font: bold 12pt
+}
+
+
+</string>
+        </property>
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="inputB6">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>140</y>
+          <width>61</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color: rgb(9, 40, 93);
+color: white;
+font: bold 12pt
+}
+
+
+
+</string>
+        </property>
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="inputC6">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>240</y>
+          <width>61</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color: rgb(9, 40, 93);
+color: white;
+font: bold 12pt
+}
+
+
+</string>
+        </property>
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="inputD6">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>280</y>
+          <width>61</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color: rgb(9, 40, 93);
+color: white;
+font: bold 12pt
+}
+
+
+
+</string>
+        </property>
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="inputE6">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>350</y>
+          <width>61</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color: rgb(9, 40, 93);
+color: white;
+font: bold 12pt
+}
+
+
+</string>
+        </property>
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="Circuit6">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>70</y>
+          <width>641</width>
+          <height>331</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="Resources.qrc">:/images/level6.jpg</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="Gate18">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>40</y>
+          <width>101</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox {
+background-color: rgb(9, 40, 93);
+color: white;
+font: bold 9pt;
+padding: 5px 10px;
+}
+</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>OR</string>
+         </property>
+         <property name="icon">
+          <iconset resource="Resources.qrc">
+           <normaloff>:/images/or.png</normaloff>:/images/or.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>AND</string>
+         </property>
+         <property name="icon">
+          <iconset resource="Resources.qrc">
+           <normaloff>:/images/and.png</normaloff>:/images/and.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>NAND</string>
+         </property>
+         <property name="icon">
+          <iconset resource="Resources.qrc">
+           <normaloff>:/images/nand.png</normaloff>:/images/nand.png</iconset>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="Gate19">
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>330</y>
+          <width>101</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox {
+background-color: rgb(9, 40, 93);
+color: white;
+font: bold 9pt;
+padding: 5px 10px;
+}
+</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>AND</string>
+         </property>
+         <property name="icon">
+          <iconset resource="Resources.qrc">
+           <normaloff>:/images/and.png</normaloff>:/images/and.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>OR</string>
+         </property>
+         <property name="icon">
+          <iconset resource="Resources.qrc">
+           <normaloff>:/images/or.png</normaloff>:/images/or.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>XOR</string>
+         </property>
+         <property name="icon">
+          <iconset resource="Resources.qrc">
+           <normaloff>:/images/xor.png</normaloff>:/images/xor.png</iconset>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="Gate20">
+        <property name="geometry">
+         <rect>
+          <x>440</x>
+          <y>110</y>
+          <width>101</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox {
+background-color: rgb(9, 40, 93);
+color: white;
+font: bold 9pt;
+padding: 5px 10px;
+}
+</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>OR</string>
+         </property>
+         <property name="icon">
+          <iconset resource="Resources.qrc">
+           <normaloff>:/images/or.png</normaloff>:/images/or.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>NAND</string>
+         </property>
+         <property name="icon">
+          <iconset resource="Resources.qrc">
+           <normaloff>:/images/nand.png</normaloff>:/images/nand.png</iconset>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="Gate21">
+        <property name="geometry">
+         <rect>
+          <x>460</x>
+          <y>360</y>
+          <width>101</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox {
+background-color: rgb(9, 40, 93);
+color: white;
+font: bold 9pt;
+padding: 5px 10px;
+}
+</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>NOR</string>
+         </property>
+         <property name="icon">
+          <iconset resource="Resources.qrc">
+           <normaloff>:/images/nor.png</normaloff>:/images/nor.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>NOT</string>
+         </property>
+         <property name="icon">
+          <iconset resource="Resources.qrc">
+           <normaloff>:/images/not.png</normaloff>:/images/not.png</iconset>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="Gate22">
+        <property name="geometry">
+         <rect>
+          <x>590</x>
+          <y>130</y>
+          <width>101</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox {
+background-color: rgb(9, 40, 93);
+color: white;
+font: bold 9pt;
+padding: 5px 10px;
+}
+</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>OR</string>
+         </property>
+         <property name="icon">
+          <iconset resource="Resources.qrc">
+           <normaloff>:/images/or.png</normaloff>:/images/or.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>NOR</string>
+         </property>
+         <property name="icon">
+          <iconset resource="Resources.qrc">
+           <normaloff>:/images/nor.png</normaloff>:/images/nor.png</iconset>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>AND</string>
+         </property>
+         <property name="icon">
+          <iconset resource="Resources.qrc">
+           <normaloff>:/images/and.png</normaloff>:/images/and.png</iconset>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="Gate18Image">
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>80</y>
+          <width>91</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel{
+background-color: transparent; color: transparent;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="Resources.qrc">:/images/or.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="Gate19Image">
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>220</y>
+          <width>91</width>
+          <height>101</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel{
+background-color: transparent; color: transparent;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="Resources.qrc">:/images/and.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="Gate20Image">
+        <property name="geometry">
+         <rect>
+          <x>440</x>
+          <y>150</y>
+          <width>91</width>
+          <height>101</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel{
+background-color: transparent; color: transparent;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="Resources.qrc">:/images/or.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="Gate21Image">
+        <property name="geometry">
+         <rect>
+          <x>470</x>
+          <y>270</y>
+          <width>81</width>
+          <height>101</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel{
+background-color: transparent; color: transparent;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="Resources.qrc">:/images/nor.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="Gate22Image">
+        <property name="geometry">
+         <rect>
+          <x>600</x>
+          <y>170</y>
+          <width>81</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel{
+background-color: transparent; color: transparent;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="Resources.qrc">:/images/or.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_17">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>91</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF; /* White text */
+    background-color: #004080; /* Blue background for text box */
+    border: 2px solid #4DC3FF; /* Light blue border */
+    padding: 8px; /* Padding for better readability */
+    border-radius: 5px; /* Rounded corners */
+}</string>
+        </property>
+        <property name="text">
+         <string>Level 6</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_23">
+        <property name="geometry">
+         <rect>
+          <x>750</x>
+          <y>20</y>
+          <width>241</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+    font-size: 15px;
+    font-weight: normal;
+    color: #FFFFFF; /* White text */
+    border: 2px solid rgb(62, 206, 158); /* Light blue border */
+    padding: 8px; /* Padding for better readability */
+    border-radius: 5px; /* Rounded corners */
+}</string>
+        </property>
+        <property name="text">
+         <string>Keep in mind the target output.</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="outputCircle6">
+        <property name="geometry">
+         <rect>
+          <x>730</x>
+          <y>200</y>
+          <width>51</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(128, 128, 128); border-radius: 25px;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="Resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

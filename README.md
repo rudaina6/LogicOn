@@ -2,19 +2,19 @@
 
 **LogicOn** is an interactive logic gates simulation game built with **Qt (C++)**, designed to help users learn and play with logic circuits.
 
-## 🔧 Features
+## Features
 
-- 💡 Tutorial section with Educational UI for basics
-- 🟢 Puzzles with increasing difficulty
-- 🔁 Real-time output simulation of circuits
+- Tutorial section with Educational UI for basics
+- Puzzles with increasing difficulty
+- Real-time output simulation of circuits
 
 
-## 🚀 Tech Stack
+## Tech Stack
 
 - C++ with Qt Framework
 - Qt Widgets for UI
 
-## 📸 Screenshots
+## UI Screenshots
 
 - Cover Page
 
@@ -38,7 +38,7 @@
 
 ![image](https://github.com/user-attachments/assets/c091e9ff-dd4f-4387-8d2f-0831800ad024)
 
-## 📂 How to Run
+## Run the App
 
 1. Open `LogicOn.pro` in Qt Creator
 2. Click "Run qmake"
